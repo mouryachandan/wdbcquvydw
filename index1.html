@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+      *{
+    margin: 0%;
+    padding: 0%;
+   }
+   body{
+    background-color: rgb(196, 27, 27);
+   }
+    .contain{
+      width: 300px;
+      height: 355px;
+      text-align: center;
+      color: aliceblue;
+      background-color: rgb(6, 6, 7);
+      margin-left: 39%;
+        margin-top: auto;
+    }
+    .contain text{
+      position: relative;
+      top: 7%;
+    }
+    .inp1{
+      border: none;
+      background-color: black;
+      border-bottom: 3px solid white;
+      width: 250px;
+      font-size: 20px;
+      margin-top: 40px;
+      outline: none;
+      color: white
+
+    } 
+    .inp2{
+      border: none;
+      background-color: black;
+      border-bottom: 3px solid white;
+      width: 250px;
+      font-size: 20px;
+      margin-top: 40px;
+      outline: none;
+      color: white
+
+    } 
+    .text button{
+      width: 250px;
+      height: 44px;
+      background-color: aqua;
+      color: black;
+      border: none;
+      font-size: 22px;
+      border-radius: 25px;
+      margin: 20px;
+    }
+    button:hover{
+      border: 3px solid aqua;
+      color: white;
+      font-size: 20px;
+      background-color: black;
+    }
+     p{
+      margin-top: 30px;
+      font-size: 20px;
+
+     }
+     p span{
+      color: aqua;
+     }
+     a{
+      text-decoration: none;
+     }
+     .home{
+      text-align: right;
+       color: black;
+       margin: 20px;
+       list-style: none;
+       
+      
+      
+       
+       padding: 15px;
+       font-size: 20px;
+       display: inline;
+     }
+     
+     span{
+      margin: 0 10px;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+     }
+
+     @media only screen and (max-width: 700px){
+      span{
+          display: block;
+      }
+      ul{
+          display: none;
+      }
+     }
+     .home{
+      display: block;
+     }
+     .heding{
+      text-align: center;
+      position: relative;
+      top: 7%;
+      font-size: 50px;
+      background-color: blue;
+
+     }
+     </style>
+</head>
+
+   
+
+<body>
+       <div class="heding">
+           Welcome To Login Page
+       </div>
+     <div class="home">
+        <span onclick="myFunction()">&#9776;</span>
+        <ul id="menu" >
+           <li type="none"><a href="vbdv ">Home</a></li>
+           <br> 
+            <li type="none"><a href="vbdv ">Contect</a></li>  
+            <br>
+
+          <li type="none"> <a href="vbdv ">About</a></li>  
+          <br>
+         <li type="none">  <a href="vbdv ">Help</a></li>   
+            
+        </ul>
+   
+</div>
+
+
+    <div class="contain">
+      <div class="text">
+        <h1>Login</h1>
+        <input class="inp1" type="text" placeholder="user name" id="username">
+        <input class="inp2" type="password" placeholder="password" id="password">
+        <p>Forget Password</p>
+        <button onclick="login()">Login</button>
+        <p>Not a member?<a href="file:///C:/Users/PK054/Pictures/preject%20Ragister%201/register.html"><samp>Register</samp></p></a>
+
+      </div>
+    </div>
+<script>
+    function myFunction(){
+             var x= document.getElementById("menu");
+             if(x.style.display == "block"){
+                x.style.display = "none";
+
+             }
+             else{
+                x.style.display = "block";
+             }
+    }
+     function login()
+     {
+    var uname=document.getElementById('username').value;
+    var pass=document.getElementById('password').value;
+    if(uname=="chandan" && pass=="1234")
+    {
+      location.assign("file:///C:/Users/PK054/Pictures/nasim/index.html ");
+    }
+    else{
+      window.alert("loginfaild"); n
+    }
+     }
+     
+</script>
+</body>
+</html>
